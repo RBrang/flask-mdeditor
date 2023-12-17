@@ -8,7 +8,7 @@
 from flask import current_app, request, Blueprint, url_for, render_template_string, render_template, request
 from flask import send_from_directory, jsonify
 import os
-import Markup
+from markupsafe import Markup
 from flask_mdeditor.utils import random_filename
 
 from flask_mdeditor.fields import MDEditorField # noqa
